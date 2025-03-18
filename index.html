@@ -1,14 +1,52 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://github.com/traaays">
-        <script type="text/javascript">
-            window.location.href = "https://github.com/traaays"
-        </script>
-        <title>redirect</title>
+        <meta name="viewport" content="width_device-width, initial-scale=1.0">
+        <title>tonys website</title>
+        <link rel="stylesheet" href="css.css">
+        <script defer src="app.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     </head>
-    <body>
-       <a href='https://github.com/traaays'>click here</a>
-    </body>
+<body>
+    <div class="flex-container">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#games">games</a>
+        <a href="#contact">contact</a>
+    </div>
+<!--
+    <div class="arrow">
+        <input type="image" id="myimage" src="leftarrow.png" class="leftarrow" />
+        <input type="image" id="myimage" src="rightarrow.png" class="rightarrow" />
+    </div>
+-->
+    <div class="container">
+         <div class="slides slide1" id="home">
+             <h2>traaays</h2>
+         </div>
+         <div class="slides slide2" id="about">
+            <h1>who am i?</h1>
+            <p>im not sure</p>
+         </div>
+         <div class="slides slide3" id="games">
+            <h2>what games have i made?</h2>
+            <p>...</p>
+         </div>
+         <div class="slides slide4" id="contact">
+            <p>write me an email:</p>
+            <button onclick="copyToClipboard('traaays@gmail.com')">traaays@gmail.com</button>
+         </div>
+    </div>
+
+
+</body>
 </html>
+
+
