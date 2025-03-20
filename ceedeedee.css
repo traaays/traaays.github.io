@@ -1,0 +1,41 @@
+p{
+    overflow-wrap: break-word;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#getCom{
+    font-family: 'Comic Sans MS', 'Comic Sans';
+    color: #ffacee;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px -15px 0px;
+}
+#getCom > p{
+    margin-top: 25px;
+}
+#takeAMinute{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 3px;
+}
+.middleNotCentered{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin-left: 20vw;
+}
+/* stuff disappears when going out of page
+img {
+    display: none;
+  }
+  
+:hover img {
+    display: block;
+  }
+*/

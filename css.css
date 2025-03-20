@@ -6,6 +6,15 @@
     max-width: 100%;
     overflow-x: hidden;
 }
+html{
+    cursor: url('assets/cursors/cursor1.png'), auto;
+}
+a{
+    cursor: url('assets/cursors/fuckyou.png'), auto;
+}
+button{
+    cursor: url('assets/cursors/fuckyou.png'), auto;
+}
 .flex-container {
     position: fixed;
     display: flex;
@@ -23,13 +32,12 @@
     margin-bottom: 4px;
     background-color: transparent;
     border: transparent;
-    cursor: pointer;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 .flex-container > a:hover {
-    color: rgb(91, 255, 255);
-    filter: drop-shadow(0 0 0.1rem rgb(130, 255, 255));
+    color: rgb(255, 101, 229);
+    filter: drop-shadow(0 0 0.1rem rgb(255, 130, 238));
 }
 .container{
     width: 100%;
@@ -49,15 +57,74 @@
     scroll-snap-align: start;
 }
 .slide1{
-    background-image: url("images/background.png");
+    image-rendering: pixelated;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.342), 
+        rgba(44, 29, 29, 0.26)
+      ), 
+      url('assets/tiles/sadton.png');
+    background-size: 10%;
+    background-repeat: cover;
+    
+    animation: pan 40s linear infinite;
 }
-.slide1 h2{
-    font-weight: 10;
-    font-size: 150px;
+@keyframes pan{
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+  }
+.slide1 *{
+    font-family: 'MS PGothic', 'ＭＳ Ｐゴシック', Georgia, Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+.slide1 h1{
+    font-size: 50px;
+}
+.slide1 p{
+    overflow-wrap: break-word;
+}
+.slide1 a{
+    text-decoration: none;
+    color: inherit;
+    filter: drop-shadow(0 0 0.075rem rgb(255, 255, 255));
+    font-size: x-large;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    transition-duration: 0.2s;
+  }
+.slide1 a:hover {
+    color: rgb(255, 0, 212);
+    filter: drop-shadow(0 0 0.1rem rgb(255, 0, 212));
+    text-shadow: 2px 2px rgba(126, 11, 116, 0.61)
+  }
+#me3d{
+    filter: drop-shadow(0px 5px 0.25rem rgb(104, 0, 104));
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+#button8831{
+    margin: 0px;
+}
+.middle{
+    margin-top: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.text{
+    font-size: larger;
 }
 .slide2{
-    background:#0f2638;
-    background:linear-gradient(#0f2638,#030601)
+    background:#000000;
+    background:radial-gradient(
+        rgb(30, 30, 50),
+        rgb(0, 0, 0)
+    );
 }
 .slide2 h1{
     font-size: 100px;
@@ -69,25 +136,35 @@
     background:#030601;
 }
 .slide4{
-    background-image: url("images/invert.png");
-    font-size: 50px;
-    font-weight: 1000;
+    image-rendering: pixelated;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.342), 
+        rgba(44, 29, 29, 0.26)
+      ), 
+      url('assets/tiles/newone.png');
+    background-size: 10%;
+    background-repeat: cover;
+    
+    animation: pan 40s linear infinite;
+    font-size: 20px;
+
+}
+.slide4 *{
+    font-family: 'MS PGothic', 'ＭＳ Ｐゴシック', Georgia, Arial, Helvetica, sans-serif;
 }
 .slide4 > button {
-    font-weight: 1000;
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 19px;
     background-color: transparent;
     border: transparent;
-    cursor: pointer;
     text-decoration: none;
     transition-duration: 0.2s;
 }
 .slide4 > button:hover {
-    color: rgb(255, 178, 91);
-    filter: drop-shadow(0 0 0.1rem rgb(255, 165, 130));
+    color: rgb(255, 91, 91);
+    filter: drop-shadow(0 0 0.1rem rgb(255, 130, 130));
 }
-
 .leftarrow {
     margin: 0;
     position: absolute;
@@ -112,4 +189,14 @@
 }
 .rightarrow:hover {
     filter: drop-shadow(0 0 0.3rem rgb(238, 214, 255));
+}
+#ceedeedee {
+    position: fixed;
+    bottom: 6vh;
+    right: -58vw;
+    transition: transform 1.5s ease-in-out;
+}
+/* Class that moves the image in */
+.move-up {
+    transform: translateX(-62vw); /* Moves the image up by 100px */
 }
