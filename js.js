@@ -6,7 +6,7 @@ const xDeeDee = document.getElementById("ceedeedeeX")
 
 setTimeout(() => {
     aDeeDee.classList.add("move-in");
-}, 700);
+}, 7500);
 
 imgDeeDee.addEventListener("click", () => {
     if(ceeDeeDeeAmount == 0){
@@ -35,19 +35,6 @@ xDeeDee.addEventListener("mouseleave", () => {
     }
 })
 
-let frame = 0;
-const framewidth = 196;
-const totalframes = 40;
-let animationInterval;
-
-function startAnimation() {
-    animationInterval = setInterval(() => {
-        frame = (frame + 1) % totalFrames;
-        document.getElementById("ceedeedeeImg").style.objectPosition = `-${frame * frameWidth}px 0px`;
-    }, 100);
-
-}
-
 xDeeDee.addEventListener("click", () =>{
     document.getElementById('shot').play();
     ceeDeeDeeAmount = 420
@@ -57,5 +44,3 @@ xDeeDee.addEventListener("click", () =>{
         aDeeDee.classList.remove("move-in");
     }, 2600);
 })
-
-/* mmake an x that makes him move out again, ceedeedeeamount = 10 oder so */
