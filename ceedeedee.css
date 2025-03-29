@@ -25,12 +25,20 @@ p{
     margin: 3px;
 }
 .middleNotCentered{
+    /*
     display: flex;
     align-items:flex-start;
     justify-content: flex-start;
     margin-left: 20vw;
+    */
+    text-align: center;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    display: block;
 }
-/* stuff disappears when going out of page
+:hover .middleNotCentered{
+    display: none;
+}
 img {
     display: none;
   }
@@ -38,4 +46,3 @@ img {
 :hover img {
     display: block;
   }
-*/
