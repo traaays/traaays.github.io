@@ -194,24 +194,3 @@ button{
 .rightarrow:hover {
     filter: drop-shadow(0 0 0.3rem rgb(238, 214, 255));
 }
-#ceedeedee {
-    position: fixed;
-    bottom: 6vh;
-    right: -58vw;
-    transition: transform 1.5s ease-in-out;
-    z-index: 999;
-}
-#ceedeedeeX {
-    position: fixed;
-    bottom: 27vh;
-    right: -59vw;
-    transition: transform 1.5s ease-in-out;
-    background-color: transparent;
-    border: transparent;
-    text-decoration: none;
-    z-index: 999;
-}
-/* Class that moves the image in */
-.move-in {
-    transform: translateX(-62vw); /* Moves the image up by 100px */
-}
